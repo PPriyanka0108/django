@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form method = 'POST'>
+		{%csrf_token%}
+		<label for="st_name">Student Name:</label>
+		<input id='st_name' type="text" placeholder="Student Name" name="st_name" value="{{st_update.st_name}}"><br><br>
+		<label for='st_roll_no'>Student Roll No:</label>
+		<input id='st_roll_no' type="text" placeholder="Student Roll No" name="st_roll_no" value="{{st_update.st_roll_no}}"><br><br>
+		<label for='st_sub'>Student Subject:</label>
+		<input id='st_sub' type="text" placeholder="Student Subject" name="st_sub" value="{{st_update.st_sub}}"><br><br>
+		<input type="submit" name="" value='Update'>
+	</form>
+
+</body>
+</html>

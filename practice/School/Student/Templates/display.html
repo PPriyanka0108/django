@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table border="1">
+		<thead>
+			<td>ID No</td>
+			<th>Student Name</th>
+			<th>Student Roll No</th>
+			<th>Student Subject</th>
+			<th>Student img</th>
+			<th>Modify</th>
+			<th>Delete</th>
+		</thead>
+		<tbody>
+			{%for i in st_display%}
+			<tr>
+				<td>{{i.id}}</td>
+				<td>{{i.st_name}}</td>
+				<td>{{i.st_roll_no}}</td>
+				<td>{{i.st_sub}}</td>
+				<td><img src="/media/{{i.st_image}}"></td>
+
+
+				<td><a href="/update/{{i.id}}/">Edit</a></td>
+				<td><a href="/delete/{{i.id}}/">Delete</a></td>
+			</tr>
+			</tr>
+
+			{%endfor%}
+			
+		</tbody>
+	</table>
+	<a href="/create/">Create Student Details</a>
+</body>
+</html>

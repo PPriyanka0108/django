@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<h1>Fill the Student Details</h1>
+<body>
+	<form method="POST">
+		{%csrf_token%}
+		<label for="st_name">Student Name:</label>
+		<input id='st_name' type="text" placeholder="Student Name" name="st_name" value="" required="True"><br><br>
+		<label for='st_roll_no'>Student Roll No:</label>
+		<input id='st_roll_no' type="text" placeholder="Student Roll No" name="st_roll_no" required="True"><br><br>
+		<label for='st_sub'>Student Subject:</label>
+		<input id='st_sub' type="text" placeholder="Student Subject" name="st_sub" value="" required="True"><br><br>
+
+		<input type="submit" name="">
+	</form>
+
+</body>
+</html>

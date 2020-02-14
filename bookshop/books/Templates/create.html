@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form method = 'POST'>
+		{%csrf_token%}
+		Book Name <input type="text" name="b_book_name"><br><br>
+		Author Name <input type="text" name="b_author"><br><br>
+		No. Of Pages <input type="text" name="b_no_of_pages"><br><br>
+		<input type="submit" name="submit">
+		
+	</form>
+
+</body>
+</html>

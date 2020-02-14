@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Department Details</title>
+</head>
+<body>
+<form method="POST" >
+
+	{%csrf_token%}
+	Dept_Name <input type="text" name="dept_name" value="{{d_obj.dept_name}}"><br><br>
+	Dept_No <input type="text" name="dept_no" value="{{d_obj.dept_no}}" ><br><br>
+	Subject <input type="text" name="sub"   value="{{d_obj.subject}}" ><br><br>
+	<input type="submit" name="" value='update'>
+</form>
+
+<a href="/list/">list</a>
+</body>
+</html>

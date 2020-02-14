@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<h1>Welcome to the Login Page</h1>
+<body>
+	<form method="POST">
+		{%csrf_token%}
+		<label>Username</label>
+		<input type="text" placeholder="Username" name="username"><br><br>
+		<label>Password</label>
+		<input type="password" placeholder="Password" name="password"><br><br>
+		
+		<input type="submit" name="" value='LOGIN'>  
+		<a href="/registration">Registration</a>
+
+
+	</form>
+
+</body>
+</html>

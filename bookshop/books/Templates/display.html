@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table border = 2>
+		<thead>
+			<th>Book Name</th>
+			<th>Author Name</th>
+			<th>No.Of Pages</th>
+		</thead>
+
+		<tbody>
+			{% for each in display_obj %}
+			<tr>
+				<td>{{each.book_name}}</td>
+				<td>{{each.author}}</td>
+				<td>{{each.no_of_pages}}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+
+	</table>
+<!-- <a href="create/">create</a> -->
+</body>
+</html>

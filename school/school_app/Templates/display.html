@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<table>
+	<thead>
+		<th>Student Name</th>
+		<th>Student Roll No</th>
+		<th>Student Subject</th>
+	</thead>
+	<tbody>
+		{% for each in sch_obj %}
+			<tr>
+				<td>{{each.name}}</td>
+				<td>{{each.roll_no}}</td>
+				<td>{{each.sub}}</td>
+			</tr>
+
+		{% endfor %}
+	</tbody>
+</table>
+
+</body>
+</html>

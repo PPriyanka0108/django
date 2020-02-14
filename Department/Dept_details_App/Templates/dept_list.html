@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Department Details</title>
+</head>
+<body>
+<form method="POST">
+	{%csrf_token%}
+	Dept_Name <input type="text" name="dept_name"><br><br>
+	student_name <select name="name">
+		{% for i in st%}
+			<option value="{{i.id}}">{{i.name}}</option>
+		{% endfor %}
+		
+	</select>
+	Dept_No <input type="text" name="dept_no"><br><br>
+	Subject <input type="text" name="sub"><br><br>
+	<input type="submit" name="" value='Create_dept'>
+</form>
+</body>
+</html>

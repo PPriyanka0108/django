@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form>
+<!-- 	{{d_list}}
+{% for i in d_list%}
+{{i.dept_name}}
+{{i.dept_no}}
+{{i.subject}}
+{%endfor %}
+ -->
+
+<table border="1">
+	
+	<thead>
+	
+		<th>DEPT Name</th>
+		<th>student Name</th>
+		<th>DEPT Number</th>
+		<th>SUBJECT</th>
+		<th>Update</th>
+	</thead>
+
+	<tbody>
+		{% for i in d_list%}
+		<tr>
+			<td>{{i.dept_name}}</td>
+			<td>{{i.Student}}</td>
+			<td>{{i.dept_no}}</td>
+			<td>{{i.subject}}</td>
+			<td><a href="/update/{{i.id}}">update</a></td>
+		</tr>
+
+		{%endfor %}
+
+	</tbody>
+</table>
+<a href="/create/">create</a>
+</form>
+</body>
+</html>

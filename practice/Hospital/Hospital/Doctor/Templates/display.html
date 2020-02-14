@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<h1>List of Doctors</h1>
+<body>
+	<form method="POST">
+		<table border="1">
+			<thead>
+				<th> Serail No</th>
+				<th>Doctor Name</th>
+				<th>Doctor Specialization</th>
+				<th>Doctor Qualification</th>
+				<th>Update</th>
+			</thead>
+			<tbody>
+				{% for each in display_obj %}
+				<tr>
+					<td>{{each.id}}</td>
+					<td>{{each.doc_name}}</td>
+					<td>{{each.doc_specialization}}</td>
+					<td>{{each.doc_qualification}}</td>
+
+					<td><a href="/update/{{each.id}}">Update</a></td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</form><br>
+	<a href="/create/">Fill Doctor Details</a>
+
+</body>
+</html>

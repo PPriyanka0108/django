@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<h1>Check the Updated List</h1>
+<body>
+	<form method="POST">
+		{%csrf_token%}
+		<label><b> Doctor Name:</b></label>
+		<input type="text" placeholder='Doctor Name' name="doc_name" required="True" value='{{up_obj.doc_name}}'><br><br>
+		<label><b> Doctor Specialization: </b></label>
+		<input type="text" placeholder='Doctor Specialization' name="doc_specialization" required="True" value='{{up_obj.doc_specialization}}'><br><br>
+		<label><b> Doctor Qualification: </b></label>
+		<input type="text" placeholder='Doctor Qualification' name="doc_qualification" required="True" value='{{up_obj.doc_qualification}}'><br><br>
+		<!-- <select required="True" name="doc_specialization" value=''>
+			<option>Cardiology</option>
+			<option>Neurology</option>
+			<option>Immunology</option>
+			<option>Toxicology</option>
+		</select><br><br>
+		<label><b> Doctor Qualification: </b></label>
+		<select required="True" name="doc_qualification">
+			<option>MBBS</option>
+			<option>MDS</option>
+			<option>BPT</option>
+			<option>B.Pharmacy</option>			
+		</select><br><br> -->
+		<input type="submit" name="submit" value='Submit'>
+	</form>
+
+</body>
+</html>

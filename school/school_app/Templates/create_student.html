@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<form method="post">
+		{%csrf_token%}
+
+	Student Name <input type="text" placeholder="Enter the Student Name" name="student_name"><br><br>
+	Student Section <input type="text" placeholder="Enter the Student Sec" name="student_sec"><br><br>
+	Student Roll No <input type="text" placeholder="Enter the student roll no" name="student_roll_no"><br><br>
+
+	School Name <select name = 'name'>
+		{%for each in school_obj%}
+		<option value='{{each.id}}'>{{each.name}}</option>
+		{%endfor%}
+	</select><br>
+	
+<input type="submit" name=""  value="createstudent">
+</form>
+</body>
+</html>
